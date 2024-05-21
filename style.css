@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-red-color: #ff0000;
+    --main-blue-color: #16A7DA;
+    --off-color: #fffeec;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+body {
+    font-family: "Radio Canada Big", sans-serif;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+}
+.row {
+    width: 100%;
+    margin: auto;
+}
+#top_bar {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 5px 0;
+}
+.navbar {
+    background-color: var(--off-color);
+    position: sticky;
+    top: 0;
+}
+.navbar h2 {
+    font-size: 40px;
+}
+.navbar_items {
+    width: 100%;
+}
+
+.navbar .side_menu i {
+    font-size: 35px;
+    transform: rotate(30deg);
+    cursor: pointer;
+}
+.navbar_items .logo img {
+    height: 70px;
+}
+.navbar_items .user img {
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--main-blue-color);
+    cursor: pointer;
+}
+.navbar .user {
+    position: relative;
+}
+.navbar .profile_dropdown {
+    position: absolute;
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+    right: 0;
+    display: none;
+    border-radius: 10px;
+}
+.navbar .user:hover .profile_dropdown {
+    display: block;
+}
+.navbar .profile_dropdown .dropdown_user {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.navbar .profile_dropdown ul {
+    list-style: none;
+    padding-left: 0;
+    padding: 15px 20px;
+    padding-bottom: 0;
+}
+.navbar .profile_dropdown ul li {
+    padding: 5px 0;
+}
+.navbar .profile_dropdown ul li a{
+    color: var(--white-color);
+}
+
+#back_page {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.user_info {
+    margin-left: 15px;
+}
+.second_section h1 {
+    color: var(--main-blue-color);
+    text-decoration: underline;
+}
+.second_section .btn {
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+}
+.second_section .btn:hover {
+    background-color: var(--main-red-color);
+    color: var(--white-color);
+}
+
+.login_form h1 {
+    color: var(--main-blue-color);
+    text-decoration: underline;
+}
+.login_form .btn {
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+}
+.login_form .btn:hover {
+    background-color: var(--main-red-color);
+    color: var(--white-color);
+}
+.user_login {
+    border: 2px solid var(--main-blue-color);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 40px;
+}
+
+.student_data_table h1 {
+    color: var(--main-blue-color);
+    text-decoration: underline;
+}
+.date_search
+.table tr th {
+    padding: 15px 20px;
+}
+.data_date #date {
+    color: var(--main-blue-color);
+}
+
+/* .reset_password {
+    text-align: center;
+} */
+.reset_password h1 {
+    color: var(--main-blue-color);
+    text-decoration: underline;
+}
+.reset_password img {
+    border-radius: 50%;
+    border: 3px solid var(--main-blue-color);
+}
+.reset_password h4 {
+    font-size: 40px;
+}
+.reset_page_user_name {
+    color: var(--main-blue-color);
+}
+.reset_page_user_details {
+    padding: 20px 0;
+}
+.reset_page_user_details i {
+    color: var(--main-red-color);
+}
+.reset_password .btn {
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+}
+.reset_password .btn:hover {
+    background-color: var(--main-red-color);
+    color: var(--white-color);
+}
+
+#copywrite {
+    background-color: var(--off-color);
+    padding: 10px 0;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#copywrite a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+
+/*  */
+
+.online {
+    background: var(--main-blue-color);
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    top: 130px;
+  }
+  
+  .online h3 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .offline {
+    background: var(--main-red-color);
+    position: absolute;
+    top: 130px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .offline h3 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .navbar h2 {
+        font-size: 18px;
+    }
+    .student_data_btn {
+        font-size: 16px;
+    }
+    .second_section {
+        margin-bottom: 60px;
+    }
+    .student_data_table {
+        margin-bottom: 80px;
+    }
+    .date_search {
+        margin-bottom: 40px;
+    }
+    #data_search_by_date {
+        display: block !important;
+    }
+    .old_data {
+        margin-bottom: 20px;
+    }
+    .login_form {
+        margin-bottom: 80px;
+    }
+    .reset_password {
+        margin-bottom: 80px;
+    }
+}
